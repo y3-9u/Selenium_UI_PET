@@ -19,5 +19,6 @@ def user_auth(browser):
     link = 'http://34.141.58.52:8080/#/login'
     page = LoginPage(browser, link)
     page.open()
-    page.go_to_login()
-    yield
+    page.input_login()
+    page.input_psw()
+    page.submit_btn()
